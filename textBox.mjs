@@ -1,11 +1,11 @@
 // will draw box with text
-export function drawBox(var text) {};
+export function drawBox(text) {};
 
 // will hide/clear box
 export function clearBox() {};
 
 // will draw with a slight delay after each character
-export function timeDraw(var text, var timer) {};
+export function timeDraw(text, timer) {};
 
 // will hide box
 export function hideBox() {};
