@@ -1,6 +1,6 @@
-export function drawTitle(var title, var subtext) {};
+export function drawTitle( title, subtext) {};
 
-export function timedTitle(var title, var subtext, var delay) {};
+export function timedTitle(title, subtext, delay) {};
 
 export function hideTitle() {};
 
