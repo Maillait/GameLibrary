@@ -30,9 +30,12 @@
 }
 
 #CenterText {
-  height : 100%;
-  width : 100%;
-  padding : auto;
+  margin : auto;
   justify-content : center;
   align-items : center;
+}
+
+h1, p{
+  margin : auto;
+  vertical-align : center;
 }
