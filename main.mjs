@@ -4,3 +4,5 @@ import {drawTiles, drawEntities, drawPlayer, drawLightingEffects, drawForegro0un
 import {checkColliders, completeCollisions, addPlayerVelocityVectors, pathfind, enemyCollisions} from "./physics.mjs";
 import {drawBox, clearBox, timeDraw, hideBox, showBox} from "./textBox.mjs"; // complete
 import {drawTitle, timedTitle, hideTitle, clearTitle} from "./title.mjs";
+
+timedTitle("---World 1---", "The Forest", 4000);
