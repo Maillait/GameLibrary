@@ -22,6 +22,7 @@ export function timeDraw(text, timer) {
       newDraw += text[i];
       console.log(i, text[i]);
     }
+    charsDrawn++;
     document.getElementById("textBox").innerText = newDraw;
 
     console.log(newDraw.length, text.length);
