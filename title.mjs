@@ -1,12 +1,12 @@
 export function drawTitle(title, subtext) {
-  document.getElementById("title").style.visibility = "visible";
-  document.getElementById("title").innerHTML = "<h1>"+title+"<h1><p>"+subtext+"<p>";
+  document.getElementById("CenterText").style.visibility = "visible";
+  document.getElementById("CenterText").innerHTML = "<h1>"+title+"<h1><p>"+subtext+"<p>";
   return;
 };
 
 export function timedTitle(title, subtext, delay) {
-  document.getElementById("title").style.visibility = "visible";
-  document.getElementById("title").innerHTML = "<h1>"+title+"<h1><p>"+subtext+"<p>";
+  document.getElementById("CenterText").style.visibility = "visible";
+  document.getElementById("CenterText").innerHTML = "<h1>"+title+"<h1><p>"+subtext+"<p>";
   function waitFunc() {
     if (waitcheck) clearTitle();
     else waitcheck++;
@@ -18,12 +18,12 @@ export function timedTitle(title, subtext, delay) {
 };
 
 export function hideTitle() {
-  document.getElementById("title").style.visibility = "hidden";
+  document.getElementById("CenterText").style.visibility = "hidden";
   return;
 };
 
 export function clearTitle() {
-  document.getElementById("title").innerText = "";
-  document.getElementById("title").style.visibility = "hidden";
+  document.getElementById("CenterText").innerText = "";
+  document.getElementById("CenterText").style.visibility = "hidden";
   return;
 };
