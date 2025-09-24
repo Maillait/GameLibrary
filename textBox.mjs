@@ -18,7 +18,10 @@ export function timeDraw(text, timer) {
   let charsDrawn = 0;
   let newDraw = "";
   function drawChars() {
-     for (let i = 0; i <= charsDrawn; i++) newDraw += text[i];
+    for (let i = 0; i <= charsDrawn; i++) {
+      newDraw += text[i];
+      console.log(i, text[i]);
+    }
     document.getElementById("textBox").innerText = newDraw;
 
     console.log(newDraw.length, text.length);
