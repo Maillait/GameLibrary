@@ -36,6 +36,18 @@
 }
 
 h1, p{
-  margin : auto;
-  vertical-align : center;
+  position : absolute;
+  width : 100%;
+  background-color : rgba(100,100,100, .4);
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  top : 70px;
+}
+
+p {
+  font-size: 20px;
+  top : 60px;
 }
