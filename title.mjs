@@ -8,8 +8,11 @@ export function timedTitle(title, subtext, delay) {
   document.getElementById("CenterText").style.visibility = "visible";
   document.getElementById("CenterText").innerHTML = "<h1>"+title+"<h1><p>"+subtext+"<p>";
   function waitFunc() {
-    if (waitcheck) clearTitle();
-    else waitcheck++;
+    if (waitCheck) {
+      clearTitle();
+      clearInterval(waitTime);
+    }
+    else waitCheck++;
     return;
   } 
   let waitCheck = 0;
