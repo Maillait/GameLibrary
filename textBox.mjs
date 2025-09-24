@@ -13,7 +13,13 @@ export function clearBox() {
 };
 
 let charsDrawn = 0;
-function addChar() {
+
+// will draw with a slight delay after each character
+export function timeDraw(text, timer) {
+  charsDrawn = 0;
+  document.getElementById("textBox").style.visibility = "visible";
+  
+  let drawBoxInterval = setInterval(function addChar() {
       let newDraw = "";
       
       for (let i = 0; i <= charsDrawn; i++) newDraw += text[i];
@@ -21,13 +27,7 @@ function addChar() {
 
       console.log(newDraw.length, text.length);
       if (newDraw.length >= text.length) clearInterval(drawBoxInterval);
-}
-
-// will draw with a slight delay after each character
-export function timeDraw(text, timer) {
-  document.getElementById("textBox").style.visibility = "visible";
-  
-  let drawBoxInterval = setInterval(addChar, timer);
+}, timer);
   return;
 }
 
