@@ -13,16 +13,18 @@ export function clearBox() {
 };
 
 // will draw with a slight delay after each character
-export function timeDraw(text, timer, charsDrawn) {
+export function timeDraw(text, timer) {
   document.getElementById("textBox").style.visibility = "visible";
-  
+  let charsDrawn = 0;
   let newDraw = "";
-      
-  for (let i = 0; i <= charsDrawn; i++) newDraw += text[i];
-  document.getElementById("textBox").innerText = newDraw;
+  function drawChars() {
+     for (let i = 0; i <= charsDrawn; i++) newDraw += text[i];
+    document.getElementById("textBox").innerText = newDraw;
 
-  console.log(newDraw.length, text.length);
-  if (newDraw.length >= text.length) clearInterval(drawBoxInterval);
+    console.log(newDraw.length, text.length);
+    if (newDraw.length >= text.length) clearInterval(drawBoxInterval);
+  }
+  let drawBoxInterval = setInterval(drawChars, timer)
 
   return;
 }
