@@ -4,7 +4,3 @@ import {drawTiles, drawEntities, drawPlayer, drawLightingEffects, drawForegro0un
 import {checkColliders, completeCollisions, addPlayerVelocityVectors, pathfind, enemyCollisions} from "./physics.mjs";
 import {drawBox, clearBox, timeDraw, hideBox, showBox} from "./textBox.mjs";
 import {drawTitle, timedTitle, hideTitle, clearTitle} from "./title.mjs";
-// testing
-hideBox();
-timeDraw("Hello fun text; yruwerigbue beje iope jenokemv kelj ve vjelrkj elkj vlkejrv ejkvndlskv fd...", 20);
-showBox();
