@@ -21,10 +21,9 @@
 }
 
 #textBox {
-  height : 20%;
+  height : 80px;
   width : 90%;
   left : 5%;
   background-color : rgba(100, 100, 100, 0.5);
-  bottom : 5px;
-  top : 355px;
+  top : 280px;
 }
