@@ -24,7 +24,7 @@ export function timeDraw(text, timer) {
       for (let i = 0; i <= charsDrawn; i++) newDraw += text[i];
       document.getElementById("textBox").innerText = newDraw;
       
-      if (i >= text.length) clearInterval(drawBoxInterval);
+      if (newDraw.length >= text.length) clearInterval(drawBoxInterval);
     }
     , timer);
   return;
