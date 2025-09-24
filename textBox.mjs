@@ -18,14 +18,10 @@ export function timeDraw(text, timer) {
   let charsDrawn = 0;
   let newDraw = "";
   function drawChars() {
-    for (let i = 0; i <= charsDrawn; i++) {
-      newDraw += text[i];
-      console.log(i, text[i]);
-    }
+    newDraw += text[charsDrawn];
     charsDrawn++;
     document.getElementById("textBox").innerText = newDraw;
 
-    console.log(newDraw.length, text.length);
     if (newDraw.length >= text.length) clearInterval(drawBoxInterval);
   }
   let drawBoxInterval = setInterval(drawChars, timer)
