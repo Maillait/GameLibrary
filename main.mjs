@@ -14,7 +14,6 @@ timedTitle("---World 1---", "The Forest", 1000);
 timeDraw("Welcome to The Forest, and prepare to be destroyed by the many monsters and oddly kind travelors who just want to test line wrapping.", 30);
 
 document.addEventListener("mousemove", (event) => {
-  clearDraw();
   drawTitle("---World 2---", "Tests");
   clearBox();
 });
