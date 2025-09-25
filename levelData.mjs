@@ -24,7 +24,7 @@ export function defineLevel(level) {
         enemies[2] = {x : 0, y : 0, type : 0};
         enemies[3] = {x : 0, y : 0, type : 0};
         enemies[4] = {x : 0, y : 0, type : 0};
-        currentLevel[0] = {x : 0, y : 0, width : 30, height : 100, type : 1, state : 0};
+        currentLevel[0] = {x : 0, y : 340, width : 640, height : 20, type : 1, state : 0};
         currentLevel[1] = {x : 10, y : 70, width : 10, height : 40, type : 2, state : 0};
         currentLevel[2] = {x : 0, y : 5, width : 5, height : 10, type : 3, state : 0};
         currentLevel[3] = {x : 100, y : 100, width : 100, height : 100, type : 0, state : 0};
