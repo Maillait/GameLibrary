@@ -21,6 +21,14 @@
   box-sizing: border-box;
 }
 
+#hud {
+  z-index: 1;
+}
+
+#screen {
+  z-index: 0;
+}
+
 #textBox {
   height : 80px;
   width : 90%;
@@ -28,12 +36,14 @@
   background-color : rgba(80, 80, 80, 0.5);
   top : 275px;
   padding : 5px;
+  z-index: 2;
 }
 
 #CenterText {
   margin : auto;
   justify-content : center;
   align-items : center;
+  z-index: 3;
 }
 
 h1, p{
