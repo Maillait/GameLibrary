@@ -6,7 +6,7 @@ const tileLookup = ["green", "grey", "black", "blue"]; // for testing, will be r
 
 export function drawTiles() {
   for (let i = 0; i < currentLevel.length; i++) {
-    ctx1.fillstyle = tileLookup[currentLevel[i].type];
+    ctx1.fillStyle = tileLookup[currentLevel[i].type];
     ctx1.fillRect(currentLevel[i].x, currentLevel[i].y, currentLevel[i].width, currentLevel[i].height);
   }
   return;
@@ -15,13 +15,13 @@ export function drawTiles() {
 export function drawEntities() {};
 
 export function drawPlayer() {
-  ctx1.fillstyle = "red";
+  ctx1.fillStyle = "red";
   ctx1.fillRect(300, 160, 40, 40);
   return;
 };
 
 export function drawLightingEffects(darkPercent) {
-  ctx1.fillstyle = `hsla(0,0%,${darkPercent}%, 50%)`;
+  ctx1.fillStyle = `hsla(0,0%,${darkPercent}%, 50%)`;
   ctx1.fillRect(0, 0, 640, 360);
 };
 
