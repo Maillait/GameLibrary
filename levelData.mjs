@@ -5,6 +5,11 @@ export var levelForeground = {spritex : null, spritey : null};
 export var levelBackground = {spritex : null, spritey : null};
 
 export function defineLevel(level) {
+  currentLevel.length = 0;
+  nonPlayerCharacters.length = 0;
+  enemies.length = 0;
+  levelForeground.length = 0;
+  levelBackground.length = 0;
   switch(level) {
     case 1 :
         // blue print for levels
@@ -19,48 +24,13 @@ export function defineLevel(level) {
         enemies[2] = {x : 0, y : 0, type : 0};
         enemies[3] = {x : 0, y : 0, type : 0};
         enemies[4] = {x : 0, y : 0, type : 0};
-        currentLevel[0].x = 0;
-        currentLevel[0].y = 0;
-        currentLevel[0].width = 20;
-        currentLevel[0].height = 40;
-        currentLevel[0].type = 3;
-        currentLevel[0].state = 0;
-        currentLevel[1].x = 20;
-        currentLevel[1].y = 80;
-        currentLevel[1].width = 10;
-        currentLevel[1].height = 100;
-        currentLevel[1].type = 1;
-        currentLevel[1].state = 0;
-        currentLevel[2].x = 30;
-        currentLevel[2].y = 300;
-        currentLevel[2].width = 90;
-        currentLevel[2].height = 90;
-        currentLevel[2].type = 0;
-        currentLevel[2].state = 0;
-        currentLevel[3].x = 0;
-        currentLevel[3].y = 0;
-        currentLevel[3].width = 0;
-        currentLevel[3].height = 0;
-        currentLevel[3].type = 0;
-        currentLevel[3].state = 0;
-        currentLevel[4].x = 0;
-        currentLevel[4].y = 0;
-        currentLevel[4].width = 0;
-        currentLevel[4].height = 0;
-        currentLevel[4].type = 0;
-        currentLevel[4].state = 0;
-        currentLevel[5].x = 0;
-        currentLevel[5].y = 0;
-        currentLevel[5].width = 0;
-        currentLevel[5].height = 0;
-        currentLevel[5].type = 0;
-        currentLevel[5].state = 0;
-        currentLevel[6].x = 0;
-        currentLevel[6].y = 0;
-        currentLevel[6].width = 0;
-        currentLevel[6].height = 0;
-        currentLevel[6].type = 0;
-        currentLevel[6].state = 0;
+        currentLevel[0] = {x : 0, y : 0, width : 0, height : 100, type : 100, state : 0};
+        currentLevel[1] = {x : 10, y : 70, width : 10, height : 40, type : 0, state : 0};
+        currentLevel[2] = {x : 0, y : 0, width : 0, height : 0, type : 0, state : 0};
+        currentLevel[3] = {x : 0, y : 0, width : 0, height : 0, type : 0, state : 0};
+        currentLevel[4] = {x : 0, y : 0, width : 0, height : 0, type : 0, state : 0};
+        currentLevel[5] = {x : 0, y : 0, width : 0, height : 0, type : 0, state : 0};
+        currentLevel[6] = {x : 0, y : 0, width : 0, height : 0, type : 0, state : 0};
         break;
       default : defineLevel(1);
     };
