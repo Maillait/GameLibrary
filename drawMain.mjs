@@ -21,7 +21,7 @@ export function drawPlayer() {
 };
 
 export function drawLightingEffects(darkPercent) {
-  ctx1.fillstyle = `hsl(0,0,${darkPercent})`;
+  ctx1.fillstyle = `hsl(0,0%,${darkPercent}%)`;
   ctx1.fillRect(0, 0, 640, 360);
 };
 
