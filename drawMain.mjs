@@ -6,7 +6,7 @@ const tileLookup = ["green", "grey", "black", "blue"]; // for testing, will be r
 
 export function drawTiles() {
   for (let i = 0; i < currentLevel.length; i++) {
-    ctx1.fillstyle = tileLookuo[currentLevel[i].type];
+    ctx1.fillstyle = tileLookup[currentLevel[i].type];
     ctx1.fillRect(currentLevel[i].x, currentLevel[i].y, currentLevel[i].width, currentLevel[i].height);
   }
   return;
