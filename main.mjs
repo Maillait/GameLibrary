@@ -6,5 +6,15 @@ import {drawBox, clearBox, timeDraw, hideBox, showBox} from "./textBox.mjs"; // 
 import {drawTitle, timedTitle, hideTitle, clearTitle} from "./title.mjs"; // complete
 import {currentLevel, nonPlayerCharacters, enemies, levelForeground, levelBackground, defineLevel} from "./levelData.mjs"; // blueprint complete
 
+// testing functions
+defineLevel(1);
+drawTiles();
+drawLightingEffects(.5);
 timedTitle("---World 1---", "The Forest", 1000);
-timeDraw("Welcome to The Forest, and prepare to be destroyed by the many monsters and oddly kind travelors who just want to test line wrapping.", 30)
+timeDraw("Welcome to The Forest, and prepare to be destroyed by the many monsters and oddly kind travelors who just want to test line wrapping.", 30);
+
+document.addEventListener("mousemove", (event) => {
+  clearDraw();
+  drawTitle("---World 2---", "Tests");
+  clearBox();
+});
