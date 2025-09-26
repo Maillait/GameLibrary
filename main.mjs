@@ -9,7 +9,6 @@ import {currentLevel, nonPlayerCharacters, enemies, levelForeground, levelBackgr
 // testing functions
 defineLevel(1);
 drawTiles();
-drawLightingEffects(50);
 timedTitle("---World 1---", "The Forest", 1000);
 timeDraw("Welcome to The Forest, and prepare to be destroyed by the many monsters and oddly kind travelors who just want to test line wrapping.", 30);
 
